@@ -1,0 +1,295 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    margin-inline: 20px;
+    color: white;
+    font-size: 18px;
+    margin-right: 11px;
+}
+
+ul li a.btn {
+    padding: 4px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+}
+
+.logo img {
+    width: 105px;
+    margin-left: 12px;
+}
+
+.icon {
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12px;
+    display: none;
+}
+
+
+.main {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.mainText {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    color: white;
+}
+
+.mainText h1 {
+    font-size: 40px;
+}
+
+.mainText button {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 150px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.mainText button:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.head {
+    text-align: center;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.menus {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin-inline: 22px;
+    margin-top: 22px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+}
+
+.menus .card {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    flex-wrap: wrap;
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+}
+
+.card i {
+    font-size: 50px;
+}
+
+.works .card {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    margin-inline: 5px;
+    border: 2px solid black;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.galaries {
+    display: flex;
+    justify-content: center;
+}
+
+.galary .card {
+    width: 100%;
+    margin: 0;
+}
+
+.reviews .card {
+    width: 300px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.orders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    width: 600px;
+    height: 400px;
+    background: rgba(250, 250, 210, 0.705);
+    margin: 0 auto;
+
+}
+
+.orders button {
+    color: white;
+    background: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(128, 128, 128);
+    left: 300px;
+    margin-top: 25px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:600px) {
+    nav ul {
+        display: none;
+    }
+
+    .icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .showData {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        background-color: rgba(128, 128, 128, 0.705);
+        width: 100%;
+        height: 260px;
+        text-align: center;
+        /* padding: 0px; */
+        gap: 22px;
+        z-index: 1000;
+
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .mainText {
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin: 0;
+    }
+
+    .mainText h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+    .mainText p{
+        font-size: 10px;
+    }
+
+    .mainText button {
+        font-size: 10px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menus {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 300px;
+        margin: 12px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .works {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .works .card {
+        width: calc(30% -44px);
+        margin: 22px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .galaries {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galaries .card {
+        width: 300px;
+        margin: 0px;
+    }
+}
+@media screen and (max-width:400px) {
+    .orders{
+        width: 380px;
+        height: 340px;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .orders button{
+        font-size: 10px;
+    }
+    
+    
+}
